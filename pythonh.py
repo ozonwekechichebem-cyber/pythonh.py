@@ -34,17 +34,17 @@
 # # # # # #     print(fruit)
 # # # # # # squares = [x**2 for x in range(10)]
 # # # # # # print(squares)  # [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
-# # # # # # age = 36
-# # # # # # text = "My name is John, and I am {age}" 
-# # # # # # print(text)
-# # # # # # price = 59
-# # # # # # text = f"The price is {price} dollars"
-# # # # # # print(text)
-# # # # # # price = 49
-# # # # # # text = f"The price is {price:.2f} dollars"
-# # # # # # print(text)
-# # # # # # text = f"The price is {20 * 49} dollars"
-# # # # # # print(text)
+# age = 36
+# text = "My name is John, and I am {age}" 
+# print(text)
+# price = 59
+# text = f"The price is {price} dollars"
+# print(text)
+# price = 49
+# text = f"The price is {price:.2f} dollars"
+# print(text)
+# text = f"The price is {20 * 49} dollars"
+# print(text)
 
 
 
@@ -306,79 +306,79 @@
 
 
 
-word_list = ["Banana", "Apple", "Orange"]
-import random
-chosen_word = random.choice(word_list)
-#let random.choice be "guess"
-guess = input("guess a fruit:").lower
-for letter in chosen_word:
-    if letter == guess:
-        print("right")
-    else:
-        print("wrong")
+# word_list = ["Banana", "Apple", "Orange"]
+# import random
+# chosen_word = random.choice(word_list)
+# #let random.choice be "guess"
+# guess = input("guess a fruit:").lower
+# for letter in chosen_word:
+#     if letter == guess:
+#         print("right")
+#     else:
+#         print("wrong")
 
-#if the empty list is called display
-#  for each letter in the chosen word add a "_" to 'display'
-# if the letter  in the chosen word is "apple" display should be ["_","_","_","_","_"] represinting each letter in guess
-#       
+# #if the empty list is called display
+# #  for each letter in the chosen word add a "_" to 'display'
+# # if the letter  in the chosen word is "apple" display should be ["_","_","_","_","_"] represinting each letter in guess
+# #       
 
-strings = ["my", "world", "apple", "pear"]
-lengths = map(len, strings)
-print(list(lengths))  # Output: [2, 5, 5, 4]
+# strings = ["my", "world", "apple", "pear"]
+# lengths = map(len, strings)
+# print(list(lengths))  # Output: [2, 5, 5, 4]
 
-strings = ["my", "world", "apple", "pear"]
-lengths = map(lambda x: x + "s", strings)
-print(list(lengths))  # Output: [2, 5, 5, 4]
+# strings = ["my", "world", "apple", "pear"]
+# lengths = map(lambda x: x + "s", strings)
+# print(list(lengths))  # Output: [2, 5, 5, 4]
 
-strings = ["my", "world", "apple", "pear"]
-def add_s(strings):  
-    return strings + "s"
-lengths = map(add_s, strings)
-print(list(lengths))  # Output: [2, 5, 5, 4]
+# strings = ["my", "world", "apple", "pear"]
+# def add_s(strings):  
+#     return strings + "s"
+# lengths = map(add_s, strings)
+# print(list(lengths))  # Output: [2, 5, 5, 4]
 
-def longer_than_4(strings):
-    return len(strings) > 4
-strings = ["my", "world", "apple", "pear"]
-filtered = filter(longer_than_4, strings)
-print(list(filtered))  # Output: ['world', 'apple']
+# def longer_than_4(strings):
+#     return len(strings) > 4
+# strings = ["my", "world", "apple", "pear"]
+# filtered = filter(longer_than_4, strings)
+# print(list(filtered))  # Output: ['world', 'apple']
 
-#list comprehension
-nums = [54, 23, 66, 12, 34, 89]
-evens = []
-for nums in nums:
-    if nums % 2 == 0:
-        evens.append(nums)
-print(evens)  # Output: [54, 66, 12, 34]
-#or
-nums = [54, 23, 66, 12, 34, 89]
-evens = [num for num in nums if num % 2 == 0]   
-print(evens)  # Output: [54, 66, 12, 34]
+# #list comprehension
+# nums = [54, 23, 66, 12, 34, 89]
+# evens = []
+# for nums in nums:
+#     if nums % 2 == 0:
+#         evens.append(nums)
+# print(evens)  # Output: [54, 66, 12, 34]
+# #or
+# nums = [54, 23, 66, 12, 34, 89]
+# evens = [num for num in nums if num % 2 == 0]   
+# print(evens)  # Output: [54, 66, 12, 34]
 
 
-numbers: list[int] = [1, 2, 3, 4, 5]
-squared: list[int] = [pow(numbers,2)  for number in numbers]
-print(squared)  # Output: [1, 4, 9, 16, 25]
+# numbers: list[int] = [1, 2, 3, 4, 5]
+# squared: list[int] = [pow(numbers,2)  for number in numbers]
+# print(squared)  # Output: [1, 4, 9, 16, 25]
 
-numbers: list[int] = [1, 2, 3, 4, 5]
-squared: list[int] = [pow(numbers,2)  for number in numbers if number > 2]
-print(squared)  # Output: [9, 16, 25]  
+# numbers: list[int] = [1, 2, 3, 4, 5]
+# squared: list[int] = [pow(numbers,2)  for number in numbers if number > 2]
+# print(squared)  # Output: [9, 16, 25]  
 
-#generator comprehension
-from typing import Generator
-data: range = range(10_000)
-squared_gen: Generator[int, None, None] = (pow(numbers,2) for x in data)
-print(squared_gen)  # Output: <generator object <genexpr> at 0 
-print(next(squared_gen))  # Output: 0
-print(next(squared_gen))  # Output: 1               
-print(next(squared_gen))  # Output: 4
-print(next(squared_gen))  # Output: 9
+# #generator comprehension
+# from typing import Generator
+# data: range = range(10_000)
+# squared_gen: Generator[int, None, None] = (pow(numbers,2) for x in data)
+# print(squared_gen)  # Output: <generator object <genexpr> at 0 
+# print(next(squared_gen))  # Output: 0
+# print(next(squared_gen))  # Output: 1               
+# print(next(squared_gen))  # Output: 4
+# print(next(squared_gen))  # Output: 9
 
-#set comprehension
-values: list[int] = [1, 2, 3, 2, 4, 5, 1, 3]
-filtered_set: set[int] = {x for x in values if x % 2 == 0}
-print(filtered_set)  # Output: {2, 4}
+# #set comprehension
+# values: list[int] = [1, 2, 3, 2, 4, 5, 1, 3]
+# filtered_set: set[int] = {x for x in values if x % 2 == 0}
+# print(filtered_set)  # Output: {2, 4}
 
-#dictionary comprehension
-data: list[tuple[str, int]] = [("apple", 1), ("banana", 2), ("orange", 3)]
-fruit_dict: dict[str, int] = {key: value for key, value in data}
-print(fruit_dict)  # Output: {'apple': 1, 'banana': 2, 'orange': 3}
+# #dictionary comprehension
+# data: list[tuple[str, int]] = [("apple", 1), ("banana", 2), ("orange", 3)]
+# fruit_dict: dict[str, int] = {key: value for key, value in data}
+# print(fruit_dict)  # Output: {'apple': 1, 'banana': 2, 'orange': 3}

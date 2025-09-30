@@ -150,4 +150,60 @@
 #         print(my_list[i], end=' ')  
 
 
-print(7 % 3)
+# print(7 % 3)
+
+# #current working directory
+# pwd
+# #list files in current directories
+# ls
+# git init
+# ls -a
+
+
+# #function that allows for input
+# def greet_with_name(name):
+#     print(f"hello {name}")
+#     print(f"how do you do {name}?")
+#     print("Isn't the weather nice today")
+
+# greet_with_name("kizito")
+
+#function with more than 1 input
+# def greet_with(name,location): 
+#     print(f"hello {name}")
+#     print(f"what is it like in {location}")
+# greet_with("kizito", "Ado")  
+
+# #function with keyword arguments
+# greet_with(name="Angela", location="Ado")
+
+# test_h = 2
+# test_w = 4
+# coverage = 5
+# nums_of_cans = (test_h * test_w)/ coverage
+# print(nums_of_cans)
+# print(round(nums_of_cans))
+
+
+test_h = int(input("Height of wall:"))
+test_w = int(input("Width of wall:"))
+coverage = 5
+#paint_calc(heigth=test_h, width=test_w, coverage=5)
+import math
+
+def paint_calc(heigth,width,coverage):
+    area = "height" * " width"
+    nums_of_cans = math.ceil(area / coverage)
+    print(f"you'll need {nums_of_cans} cans of paint.")
+
+
+def prime_checker(number):
+    is_prime = True
+    for i in range(2,number)
+      if number % i == 0:
+         is_prime = False
+      if is_prime:
+         print("it's a prime number.")
+      else:
+         print("it's not a prime number.")     
+  

@@ -185,25 +185,58 @@
 # print(round(nums_of_cans))
 
 
-test_h = int(input("Height of wall:"))
-test_w = int(input("Width of wall:"))
-coverage = 5
-#paint_calc(heigth=test_h, width=test_w, coverage=5)
-import math
+# test_h = int(input("Height of wall:"))
+# test_w = int(input("Width of wall:"))
+# coverage = 5
+# #paint_calc(heigth=test_h, width=test_w, coverage=5)
+# import math
 
-def paint_calc(heigth,width,coverage):
-    area = "height" * " width"
-    nums_of_cans = math.ceil(area / coverage)
-    print(f"you'll need {nums_of_cans} cans of paint.")
+# def paint_calc(heigth,width,coverage):
+#     area = "height" * " width"
+#     nums_of_cans = math.ceil(area / coverage)
+#     print(f"you'll need {nums_of_cans} cans of paint.")
 
 
-def prime_checker(number):
-    is_prime = True
-    for i in range(2,number)
-      if number % i == 0:
-         is_prime = False
-      if is_prime:
-         print("it's a prime number.")
-      else:
-         print("it's not a prime number.")     
+# def prime_checker(number):
+#     is_prime = True
+#     for i in range(2,number)
+#       if number % i == 0:
+#          is_prime = False
+#       if is_prime:
+#          print("it's a prime number.")
+#       else:
+#          print("it's not a prime number.")     
   
+
+
+# word = "python"
+# print(word[0])
+# print(word[-1])
+# print(word[0:2])
+
+# a = "hello"
+# b = "world"
+# print(a + " " + b)
+firstname = "sam"
+lastname = "king"
+address = "london"
+
+data = "my name is" + " " + firstname + " " + lastname + " " + "I live at" + " " + address + " " +"."
+print(data)
+
+a = "hello"
+print(a * 3)
+
+word = "python"
+print("n" in word)
+
+text = "Python Programming"
+print(text.upper())
+print(text.strip())
+print(text.replace("Python", "Java"))
+print(".".join(["2025", "08", "21"]))
+
+x = 10
+print(type(x))
+y = str(x)
+print(type(y))

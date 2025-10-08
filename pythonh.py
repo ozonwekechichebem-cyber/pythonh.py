@@ -10,6 +10,12 @@
 # # # # # # print(text.replace("day","night"))
 # # # # # # print(text.split(" text"))
 
+# text = "Python Programming"
+# print(text.upper())
+# print(text.strip())
+# print(text.replace("Python", "Java"))
+# print(".".join(["2025", "08", "21"]))
+
 # # # # # # x =20
 # # # # # # print(type(x))
 # # # # # # y = str(x)
@@ -382,3 +388,30 @@
 # data: list[tuple[str, int]] = [("apple", 1), ("banana", 2), ("orange", 3)]
 # fruit_dict: dict[str, int] = {key: value for key, value in data}
 # print(fruit_dict)  # Output: {'apple': 1, 'banana': 2, 'orange': 3}
+
+
+# files = os.listdir("directory")
+# for i, filename in enumerate(files):
+#     new_name = f"{name_prefix}_{i + 1}{file_extension}"
+#     old_path = os.path.join(direcrory,filename)
+#     new_path = os.path.join(directory, new_name)
+#     os.rename(old_path,new_path)
+#     print(f"Renamed: {filename} ->{new_name}")
+
+
+
+
+#import datetime
+# def datetime():
+#     birth_year = int(input("this is the birth year"))
+#     current_year = int(input("this is the current year"))
+#     my_age = current_year - birth_year 
+#     for i in range(0:5)i +1
+#     print(my_age)
+# birth_year = 1999
+# current_year = 2025
+# datetime()
+
+student = 50,78,90,60
+total_student = sum(student)
+print(total_student)

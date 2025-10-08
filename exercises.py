@@ -217,26 +217,51 @@
 # a = "hello"
 # b = "world"
 # print(a + " " + b)
-firstname = "sam"
-lastname = "king"
-address = "london"
+# firstname = "sam"
+# lastname = "king"
+# address = "london"
 
-data = "my name is" + " " + firstname + " " + lastname + " " + "I live at" + " " + address + " " +"."
-print(data)
+# data = "my name is" + " " + firstname + " " + lastname + " " + "I live at" + " " + address + " " +"."
+# print(data)
 
-a = "hello"
-print(a * 3)
+# a = "hello"
+# print(a * 3)
 
-word = "python"
-print("n" in word)
+# word = "python"
+# print("n" in word)
 
-text = "Python Programming"
-print(text.upper())
-print(text.strip())
-print(text.replace("Python", "Java"))
-print(".".join(["2025", "08", "21"]))
+# text = "Python Programming"
+# print(text.upper())
+# print(text.strip())
+# print(text.replace("Python", "Java"))
+# print(".".join(["2025", "08", "21"]))
 
-x = 10
-print(type(x))
-y = str(x)
-print(type(y))
+# x = 10
+# print(type(x))
+# y = str(x)
+# print(type(y))
+
+#let say Grade A is greater than or equal to 90
+# Grade B  is greater than or equal to 70
+# Grade C is greater than or equal to 60
+# Grade D is greater than or equal to 50
+# less than 50 print F
+English = 85
+Maths = 78
+Science = 65
+History = 55
+Civic = 90
+def grade_average():
+    if English > 85:
+        print("result")
+    elif Maths > 78:
+        print("result")
+    elif Science > 65:
+        print("result")
+    elif History > 55:
+        print("result")
+    elif Civic > 90:
+        print("result")
+    else:
+        print("result")
+grade_average()

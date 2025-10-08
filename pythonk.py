@@ -167,10 +167,10 @@
 # print(round(x))
 
 
-def my_results(a, d, c):
-    return (lambda a, d, c: ((2 * a) / d) - 3 * c)(a, d, c)
-my_results(6,3,4)
-print(my_results(6,3,4))
+# def my_results(a, d, c):
+#     return (lambda a, d, c: ((2 * a) / d) - 3 * c)(a, d, c)
+# my_results(6,3,4)
+# print(my_results(6,3,4))
 
 # weight_as_int = int(weight)
 # height_as_float = float(height)
@@ -210,50 +210,50 @@ print(my_results(6,3,4))
 #     print("This is an odd number.")   
 
 
-bmi = 22
-if bmi < 18.5:
-    print(f"Your bmi is {bmi}, you are underweight.")
-elif bmi < 25:
-    print(f"Your bmi is {bmi}, you have a normal weight.")
-elif bmi < 30:
-    print(f"Your bmi is {bmi}, you are overweight.")
-elif bmi < 35:
-    print(f"Your bmi is {bmi}, you are obese.")
-else:
-    print(f"Your bmi is {bmi}, you are clinically obese.")
+# bmi = 22
+# if bmi < 18.5:
+#     print(f"Your bmi is {bmi}, you are underweight.")
+# elif bmi < 25:
+#     print(f"Your bmi is {bmi}, you have a normal weight.")
+# elif bmi < 30:
+#     print(f"Your bmi is {bmi}, you are overweight.")
+# elif bmi < 35:
+#     print(f"Your bmi is {bmi}, you are obese.")
+# else:
+#     print(f"Your bmi is {bmi}, you are clinically obese.")
 
 
 
     #on every year that is evenly divisible by 4
       #except every year that is evenly divisible by 100
         #unless the year is also evenly divisible by 400   
-year = 2000
-if year % 4 == 0:
-    if year % 100 == 0:
-        if year % 400 == 0:
-            print(f"{year} is a leap year.")
-        else:
-            print(f"{year} is not a leap year.")
-    else:
-        print(f"{year} is a leap year.")
+# year = 2000
+# if year % 4 == 0:
+#     if year % 100 == 0:
+#         if year % 400 == 0:
+#             print(f"{year} is a leap year.")
+#         else:
+#             print(f"{year} is not a leap year.")
+#     else:
+#         print(f"{year} is a leap year.")
 
 
 
-if height >= 120:
-    print("You can ride the rollercoaster!")    
-    age = int(input("What is your age? "))
-    if age < 12:
-      print("Child tickets are $5.")
-    elif age <= 18:
-        print("Youth tickets are $7.")
-    else:
-        print("Adult tickets are $12.")
-    wants_photo = input("Do you want a photo taken? Y or N. ")
-    if wants_photo == "Y":
-        bill += 3
-    print(f"Your final bill is ${bill}.")
-else:
-    print("Sorry, you have to grow taller before you can ride.")
+# if height >= 120:
+#     print("You can ride the rollercoaster!")    
+#     age = int(input("What is your age? "))
+#     if age < 12:
+#       print("Child tickets are $5.")
+#     elif age <= 18:
+#         print("Youth tickets are $7.")
+#     else:
+#         print("Adult tickets are $12.")
+#     wants_photo = input("Do you want a photo taken? Y or N. ")
+#     if wants_photo == "Y":
+#         bill += 3
+#     print(f"Your final bill is ${bill}.")
+# else:
+#     print("Sorry, you have to grow taller before you can ride.")
     
 #welcome to the pizza delivery service!
 print("Welcome to Python Pizza Deliveries!")
@@ -266,85 +266,85 @@ extra_cheese = input("Do you want extra cheese? Y or N ")
 #pepperoni for small pizza = +$2
 #pepperoni for medium or large pizza = +$3  
 #extra cheese for any size pizza = + $1 
-if size == "S":
-    bill = 15
-elif size == "M":
-        bill = 20
-else:
-        bill = 25
-if add_pepperoni == "Y":
-    if size == "S":
-        bill += 2
-    else:
-        bill += 3 
-if extra_cheese == "Y":
-            bill += 1
-print(f"Your final bill is: ${bill}.") 
+# if size == "S":
+#     bill = 15
+# elif size == "M":
+#         bill = 20
+# else:
+#         bill = 25
+# if add_pepperoni == "Y":
+#     if size == "S":
+#         bill += 2
+#     else:
+#         bill += 3 
+# if extra_cheese == "Y":
+#             bill += 1
+# print(f"Your final bill is: ${bill}.") 
 
 
-print("welcome to the love calculator")
-name1 = input("kizito chebis \n")
-name2 = input("mercy cynthia \n")
+# print("welcome to the love calculator")
+# name1 = input("kizito chebis \n")
+# name2 = input("mercy cynthia \n")
 
-combined_string =name1 + name2
-lower_case_string = combined_string.lower
+# combined_string =name1 + name2
+# lower_case_string = combined_string.lower
 
-t = lower_case_string.count("t")
-r = lower_case_string.count("r")            
-u = lower_case_string.count("u")
-e = lower_case_string.count("e")
+# t = lower_case_string.count("t")
+# r = lower_case_string.count("r")            
+# u = lower_case_string.count("u")
+# e = lower_case_string.count("e")
 
-true = t + r + u + e
+# true = t + r + u + e
 
-l = lower_case_string.count("l")
-o = lower_case_string.count("o")        
-v = lower_case_string.count("v")
-e = lower_case_string.count("e")
+# l = lower_case_string.count("l")
+# o = lower_case_string.count("o")        
+# v = lower_case_string.count("v")
+# e = lower_case_string.count("e")
 
-love = l + o + v + e
-love_score = str(true) + str(love)
-print(love_score)
+# love = l + o + v + e
+# love_score = str(true) + str(love)
+# print(love_score)
 
-if (love_score < 10) or (love_score > 90):
-    print(f"Your score is {love_score}, you go together like coke and mentos.") 
-elif (love_score >= 40) and (love_score <= 50):
-    print(f"Your score is {love_score}, you are alright together.") 
-else:
-    print(f"Your score is {love_score}.")   
+# if (love_score < 10) or (love_score > 90):
+#     print(f"Your score is {love_score}, you go together like coke and mentos.") 
+# elif (love_score >= 40) and (love_score <= 50):
+#     print(f"Your score is {love_score}, you are alright together.") 
+# else:
+#     print(f"Your score is {love_score}.")   
 
-welcome to treasure island you mission is to find the treasure.
-choice1 = input('You\'re at a cross road. Where do you want to go? Type "left" or "right" \n')
-if choice1 == "left":
-    choice2 = input('You\'ve come to a lake. There is an island in the middle of the lake. Type "wait" to wait for a boat. Type "swim" to swim across. \n')
-    if choice2 == "wait":
-        choice3 = input("You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow and one blue. Which colour do you choose? \n")
-        if choice3 == "red":
-            print("It's a room full of fire. Game Over.")
-        elif choice3 == "yellow":
-            print("You found the treasure! You Win!")
-        elif choice3 == "blue":
-            print("You enter a room of beasts. Game Over.")
-        else:
-            print("You chose a door that doesn't exist. Game Over.")
-    else:
-        print("You get attacked by an angry trout. Game Over.")     
-else:
-    print("You fell into a hole. Game Over.")   
+# welcome to treasure island you mission is to find the treasure.
+# choice1 = input('You\'re at a cross road. Where do you want to go? Type "left" or "right" \n')
+# if choice1 == "left":
+#     choice2 = input('You\'ve come to a lake. There is an island in the middle of the lake. Type "wait" to wait for a boat. Type "swim" to swim across. \n')
+#     if choice2 == "wait":
+#         choice3 = input("You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow and one blue. Which colour do you choose? \n")
+#         if choice3 == "red":
+#             print("It's a room full of fire. Game Over.")
+#         elif choice3 == "yellow":
+#             print("You found the treasure! You Win!")
+#         elif choice3 == "blue":
+#             print("You enter a room of beasts. Game Over.")
+#         else:
+#             print("You chose a door that doesn't exist. Game Over.")
+#     else:
+#         print("You get attacked by an angry trout. Game Over.")     
+# else:
+#     print("You fell into a hole. Game Over.")   
 
 
-import random
-random_integer = random.randint(1, 10)
-print(random_integer)
+# import random
+# random_integer = random.randint(1, 10)
+# print(random_integer)
 
-import random
-random_float = random.random()
-print(random_float)     
+# import random
+# random_float = random.random()
+# print(random_float)     
 
-import random
-random_side = random.randint(0,1)
-if random_side == 1:
-    print("Heads")
-else:
+# import random
+# random_side = random.randint(0,1)
+# if random_side == 1:
+#     print("Heads")
+# else:
 
-    print("Tails")
+#     print("Tails")
     
